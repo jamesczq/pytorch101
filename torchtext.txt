@@ -1,0 +1,27 @@
+Pytorch
+- torchvision
+- torchtext 
+
+How to use torchtext, in particular:
+- Use pre-trained embedding
+- Use dataset API
+- Use iterator API for mini-batch
+
+1. Use pre-trained word embedding
+
+Three classes supported: GloVe, FastText, CharNGram 
+
+Two ways we can load pre-trained word embedding:
+- Initiate word embedding object
+    * FastText. One parameter: language ("simple" or "en")
+    * CharNGram
+    * GloVe. Two parameters: name and dim
+
+- Use Field instance 
+    A Field object holds metadata of feature column and label column 
+
+2. Use Dataset API 
+How to prepare the data by constructing Field for both feature and label 
+
+3. Use Iterator class for mini-batching
+Use BucketIterator class to construct minibatching iterator 
